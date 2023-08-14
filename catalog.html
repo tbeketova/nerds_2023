@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин готовых шаблонов</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">
+      <img src="img/icons/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
+    </a>
+    <nav>
+      <ul>
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li>Магазин</li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <a href="">Корзина</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Магазин готовых шаблонов</h1>
+    <section>
+      <h2>фильтр шаблонов</h2>
+      <form action="" method="get">
+        <fieldset>
+          <legend>Стоимость:</legend>
+          <input type="range">
+          <p>
+            <label for="range-min">от</label>
+            <input type="text" id="range-min" name="min" placeholder="0">
+            <label for="range-max">до</label>
+            <input type="text" id="range-max" name="max" placeholder="150000">
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li>
+              <input type="radio" id="option-adaption" name="option-site" value="adaption" checked>
+              <label for="option-adaption">Адаптивная</label>
+            </li>
+            <li>
+              <input type="radio" id="option-fixed" name="option-site" value="fixed">
+              <label for="option-fixed">Фиксированная</label>
+            </li>
+            <li>
+              <input type="radio" id="option-responsive" name="option-site" value="responsive">
+              <label for="option-responsive">Резиновая</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" id="filter-slider" name="slider" checked>
+              <label for="filter-slider">Слайдер</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-features" name="features">
+              <label for="filter-features">Блок преимуществ</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-news" name="news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-gallery" name="gallery">
+              <label for="filter-gallery">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" id="filter-basket" name="basket">
+              <label for="filter-basket">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="button">Показать</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
