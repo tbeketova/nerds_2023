@@ -14,10 +14,10 @@
       <ul>
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
-        <li>Магазин</li>
+        <li><a>Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a href="">Корзина</a>
+      <a href="#">Корзина</a>
     </nav>
   </header>
 
@@ -25,10 +25,10 @@
     <h1>Магазин готовых шаблонов</h1>
     <section>
       <h2>фильтр шаблонов</h2>
-      <form action="" method="get">
+      <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
           <legend>Стоимость:</legend>
-          <input type="range">
+          <input type="range" id="prise-range" name="range" min="0" max="15000" step="1">
           <p>
             <label for="range-min">от</label>
             <input type="text" id="range-min" name="min" placeholder="0">
@@ -78,9 +78,158 @@
             </li>
           </ul>
         </fieldset>
-        <button type="button">Показать</button>
+        <button type="submit">Показать</button>
       </form>
     </section>
+
+    <section>
+      <h2>Сортировка шаблонов</h2>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset>
+          <legend>Сoртировать:</legend>
+          <ul>
+            <li>
+              <a href="">По цене</a>
+            </li>
+            <li>
+              <a href="">По типу</a>
+            </li>
+            <li>
+              <a href="">По названию</a>
+            </li>
+            <li>
+              <a href="">Вниз</a>
+            </li>
+            <li>
+              <a href="">Вверх</a>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </section>
+
+    <section>
+      <h2>Каталог шаблонов</h2>
+      <ul>
+        <li>
+          <a href="#"><img src="img/img-sedona.png" width="359" height="578" alt="Шаблон Sedona"></a>
+          <a href="#">
+            <h3>Sedona</h3>
+          </a>
+          <p>Информационный сайт для туристов</p>
+          <a href="#">9 900 ₽</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/img-pink.jpg" width="359" height="578" alt="Шаблон Pink"></a>
+          <a href="#">
+            <h3>Pink App</h3>
+          </a>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#">9 900 ₽</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/img-barbershop.jpg" width="359" height="578" alt="Шаблон Barbershop"></a>
+          <a href="#">
+            <h3>Barbershop</h3>
+          </a>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#">9 900 ₽</a>
+        </li>
+        <li>
+          <a href="#"><img src="img/img-mishka.jpg" width="359" height="578" alt="Шаблон Mishka"></a>
+          <a href="#">
+            <h3>Mishka</h3>
+          </a>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#">9 900 ₽</a>
+        </li>
+        <li>
+          <a href=""><img src="img/img-aplus.png" width="359" height="578" alt="Шаблон Aplus"></a>
+          <a href="#">
+            <h3>Aplus</h3>
+          </a>
+          <p>Продуктовый лендинг приложения для iOS и Android</p>
+          <a href="#">9 900 ₽</a>
+        </li>
+        <li>
+          <a href=""><img src="img/img-kvast.png" width="359" height="578" alt="Шаблон Kvast"></a>
+          <a href="#">
+            <h3>Кваст</h3>
+          </a>
+          <p>Промо-сайт производителя крафтового кваса</p>
+          <a href="#">9 900 ₽</a>
+          <a href="">9 900 ₽</a>
+        </li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>Пагинация</h2>
+      <ul>
+        <li><a>1</a></li>
+        <li><a href="">2</a></li>
+        <li><a href="">3</a></li>
+        <li><a href="">Следующая</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Контакты</h2>
+      <p>NЁRDS DESIGN STUDIO</p>
+      <p>наб. Реки Карповки, <br>
+        5 лит П, Санкт-Петербург</p>
+        <p>
+          <a href="tel:+56565656565">+7 800 555-86-28</a>
+        </p>
+        <a href="">Напишите нам</a>
+    </section>
+    <!--Здесь будет карта. Пока не знаю, как поставить-->
+
+    <footer>
+      <section>
+        <h2>Социальньe seti</h2>
+        <ul>
+          <li>
+            <a href="">
+              Youtube
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Fb
+            </a>
+          </li>
+          <li>
+            <a href="">
+              Instagramm  
+            </a>
+          </li>
+        </ul>
+        <p>Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </footer>
   </main>
+
+  <!-- заготовкa для попапа с формой логина -->
+  <section>
+    <h2>Форма отправки вопроса</h2>
+    <p>Напишите нам</p>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <p>
+        <label for="submitform-name">Ваше имя:</label>
+        <input type="text" id="submitform-name" name="name" placeholder="Имя Фамилия">
+        <label for="submitform-email">Ваш email:</label>
+        <input type="email" id="submitform-email" name="email" placeholder="email@example.com ">
+      </p>
+      <p>
+        <label for="submitform-text">Текст письма:</label>
+      </p>
+      <p>
+        <textarea name="text" id="submitform-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+      </p>
+      <button type="button">Отправить</button>
+    </form>
+  </section>
 </body>
 </html>
