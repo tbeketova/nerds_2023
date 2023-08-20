@@ -209,3 +209,53 @@ a {
   line-height: 18px;
   color: var(--basic-light-dark);
 }
+
+/*Main footer*/
+.social-list {
+  list-style: none;
+}
+
+.footer-slogan {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.footer-sale {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/*Popup submit*/
+.submit h2 {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.submit-item label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.submit-item input {
+  border-radius: 3px;
+  border: 2px solid #D7DCDE;
+  background-color: var(--basic-white);
+}
+
+.submit-item input:hover,
+.submit-form textarea:hover {
+  border-radius: 3px;
+  border: 2px solid #B4B9BB;
+  background-color: var(--basic-white);
+}
+
+.submit-item input:focus,
+.submit-form textarea:focus {
+  border-radius: 3px;
+  border: 2px solid #000;
+  background-color: var(--basic-white);
+}
