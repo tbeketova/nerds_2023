@@ -22,7 +22,9 @@
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a class="user-navigation" href="">Корзина</a>
+      <div class="user-navigation">
+        <a class="basket" href="">Корзина</a>
+      </div>
     </nav>
   </header>
 
@@ -127,46 +129,45 @@
 
     <section class="contacts">
       <h2>Контакты</h2>
-      <p>NЁRDS DESIGN STUDIO</p>
-      <p>наб. Реки Карповки, <br>
+      <h3>NЁRDS DESIGN STUDIO</h3>
+      <p class="contacts-adress">наб. Реки Карповки, <br>
         5 лит П, Санкт-Петербург</p>
         <p>
-          <a href="tel:+56565656565">+7 800 555-86-28</a>
+          <a class="contacts-phone" href="tel:+56565656565">+7 800 555-86-28</a>
         </p>
-        <a href="">Напишите нам</a>
+        <a class="button" href="">Напишите нам</a>
     </section>
     <!--Здесь будет карта. Пока не знаю, как поставить-->
 
-    <footer>
-      <section>
+    <footer class="main-footer">
+      <section class="footer-social">
         <h2>Социальньe seti</h2>
-        <ul>
+        <ul class="social-list">
           <li>
-            <a href="">
+            <a class="social-button" href="">
               Youtube
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="social-button" href="">
               Fb
             </a>
           </li>
           <li>
-            <a href="">
+            <a class="social-button" href="">
               Instagramm  
             </a>
           </li>
         </ul>
-        <p>Давайте дружить, это выгодно!</p>
+        <p class="footer-slogan">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </footer>
   </main>
 
   <!-- заготовкa для попапа с формой логина -->
-  <section>
-    <h2>Форма отправки вопроса</h2>
-    <p>Напишите нам</p>
+  <section class="submit">
+    <h2>Напишите нам</h2>
     <form action="" method="post">
       <p>
         <label for="submitform-name">Ваше имя:</label>
