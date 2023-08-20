@@ -1,124 +1,131 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page"  lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная страница</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/icons/32favicon.svg" type="image/svg+xml"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/icons/152favicon.svg"> <!-- 152*152 -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
-<body>
-  <header>
-    <a href="index.html">
+<body class="page-body">
+  <header class="main-header" >
+    <a class="main-header-logo" href="index.html">
       <img src="img/icons/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
     </a>
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href="blank.html">Студия</a></li>
         <li><a href="blank.html">Клиенты</a></li>
         <li><a href="catalog.html">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-      <a href="">Корзина</a>
+      <a class="user-navigation" href="">Корзина</a>
     </nav>
   </header>
 
-  <main>
+  <main class="container">
     <h1>Дизайн-студия Nerds г. Краснодар</h1>
-    <section>
-      <p>Долго, дорого, скрупулезно.</p>
-      <p>Математически выверенный дизайн <br>
-        для вашего сайта или мобильного приложения.</p>
-      <a href="#">Узнать больше</a>
-      <h2>Картинка слайдера</h2>
+
+    <section class="slider">
+      <p class="slider-title">Любим математику как никто другой</p>
+      <p class="slider-description">Никакого креатива, только математические формулы <br>
+        для расчета идеальных пропорций</p>
+      <a class="button" href="#">Узнать больше</a>
       <img src="img/icons/nerds-index-slide1.png" width="761" height="431" alt="Картинка слайдера">
     </section>
       
-    
-    <section>
+    <section class="services">
       <h2>Список услуг</h2>
-      <ul>
-        <li>
+      <ul class="services-list">
+        <li class="services-item">
           <h3>Веб-сайты</h3>
           <p>
             <img src="img/icons/illustration-1.svg" width="300" height="146" alt="Картинка Веб-сайты">
           </p>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <p class="services-item-description">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <p>
-            <a href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </p>
         </li>
-        <li>
+        <li class="services-item">
           <h3>Приложения</h3>
           <p>
             <img src="img/icons/illustration-2.svg" width="300" height="146" alt="Картинка Приложения">
           </p>
-          <p>Покорите топ-10 приложений <br>
+          <p class="services-item-description">Покорите топ-10 приложений <br>
             в AppStore и Google Play</p>
           <p>
-            <a href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </p>
         </li>
-        <li>
+        <li class="services-item">
           <h3>Презентации</h3>
           <p>
             <img src="img/icons/illustration-3.png" width="300" height="146" alt="Презентации">
           </p>
-          <p>Вы даже не подозреваете, <br>
+          <p class="services-item-description">Вы даже не подозреваете, <br>
             насколько вы изумительны!</p>
           <p>
-            <a href="#">Заказать</a>
+            <a class="button" href="#">Заказать</a>
           </p>
         </li>
       </ul>
     </section>
+
+    <section class="features">
       <h2>Преимущества компании</h2>
-      <p>Мы — маленькая, но гордая <br>
+      <p class="features-title">Мы — маленькая, но гордая <br>
         дизайн-студия из Краснодара.
       </p>
-      <p>
+      <p class="features-description">
         Исповедуем принципы минимализма и чистоты. Ставим математический расчет <br>
         превыше креатива. Работаем не покладая рук, как роботы.
       </p>
-      <p>Выполняем заказы на разработку:</p>
-      <ul>
+      <p class="features-paragraph">Выполняем заказы на разработку:</p>
+      <ul class="features-list">
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
       </ul>
+    </section>
 
-    <section>
+    <section class="statistics">
       <h2>Статистика</h2>
       <p>
         <img src="img/icons/nerds-illustration-logo.jpg" alt="Иллюстрация логотипа">
       </p>
-      <dl>
-        <dt>146<sup>%</sup></dt>
-        <dd>Уровень самоотдачи</dd>
-        <dt>100<sup>%</sup></dt>
-        <dd>Соблюдение сроков</dd>
-        <dt>50<sup>%</sup></dt>
-        <dd>Минимальная предоплата</dd>
+      <dl class="statistics-defines">
+        <dt class="statistics-defines-percent">146<sup>%</sup></dt>
+        <dd class="statistics-defines-describes">Уровень самоотдачи</dd>
+        <dt class="statistics-defines-percent">100<sup>%</sup></dt>
+        <dd class="statistics-defines-describes">Соблюдение сроков</dd>
+        <dt class="statistics-defines-percent">50<sup>%</sup></dt>
+        <dd class="statistics-defines-describes">Минимальная предоплата</dd>
       </dl>
     </section>
 
-    <section>
+    <section class="partners">
       <h2>Партнерьi</h2>
-      <ul>
-        <li>
+      <ul class="partners-list">
+        <li class="partners-item">
           <a href=""><img src="img/icons/logo_htmlacademy.jpg" width="199" height="57" alt="Logo htmlacademy"></a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href=""><img src="img/icons/logo-barbershop.jpg" width="209" height="90" alt="Logo barbershop"></a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href=""><img src="img/icons/logo-pink-1.jpg" width="185" height="52" alt="Logo pink"></a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href=""><img src="img/icons/logo-mishka.jpg" width="173" height="84" alt="Logo mishka"></a>
         </li>
       </ul>
     </section>
 
-    <section>
+    <section class="contacts">
       <h2>Контакты</h2>
       <p>NЁRDS DESIGN STUDIO</p>
       <p>наб. Реки Карповки, <br>
