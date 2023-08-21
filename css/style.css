@@ -30,6 +30,7 @@
   --basic-text: #283136;
   --basic-light-special: #444;
   --basic-light-dark: #666;
+  --basic-dark-special: #DFDFDF;
   --basic-neutral: #EEE;
   --basic-focus: #FB565A;
   --basic-button-focus: #E74246;
@@ -124,6 +125,20 @@ a {
   text-transform: uppercase;
 }
 
+.filter-button {
+  color: var(--basic-black);
+  background-color: var(--basic-neutral);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--basic-dark-special);
+}
+
+.filter-button:active {
+  opacity: 0.3;
+}
+
 /*Services*/
 .services-list {
   list-style: none;
@@ -210,6 +225,38 @@ a {
   color: var(--basic-light-dark);
 }
 
+/*Inner page */
+
+/*Page catalog*/
+.page-title {
+  background-color: var(--basic-neutral);
+}
+
+.page-title h1 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+
+/*Filters*/
+.filter legend {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-input-radio,
+.filter-input-checkbox {
+  opacity: 0.4;
+}
+
+
+
 /*Main footer*/
 .social-list {
   list-style: none;
@@ -240,7 +287,8 @@ a {
   line-height: 18px;
 }
 
-.submit-item input {
+.submit-item input,
+.submit-form textarea {
   border-radius: 3px;
   border: 2px solid #D7DCDE;
   background-color: var(--basic-white);
