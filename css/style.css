@@ -237,7 +237,27 @@ a {
   padding: 0;
 }
 
+/*Index column*/
+.index-column {
+  margin-bottom: 73px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
 /*Features*/
+.features {
+  border: 2px solid blueviolet
+}
+
+.features h2 {
+  display: none;
+}
+
+.features p {
+  margin: 0;
+  padding: 0;
+}
+
 .features-title {
   font-size: 45px;
   font-weight: 500;
@@ -253,6 +273,12 @@ a {
   font-weight: 700;
   line-height: 24px;
   color: var(--basic-text);
+  text-transform: uppercase;
+}
+
+.features-list {
+  margin: 0;
+
 }
 
 .features-list li {
@@ -260,14 +286,48 @@ a {
 }
 
 /*Statistics*/
+.statistics h2 {
+  display: none;
+}
+
 .statistics-title {
+  margin: 0;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
   line-height: 24px;
 }
 
+/*Statistics defines*/
+.statistics-defines {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  /*grid-template-areas:
+    "defines-1 defines-2 defines-3"
+    "describes-1 describes-2 describes-3"
+  ;*/
+}
+
+.defines-1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.describes-1 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.defines-2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.describes-2 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
 .statistics-defines dt {
+  margin: 0;
   font-size: 45px;
   font-weight: 700;
   line-height: 64px;
@@ -280,6 +340,7 @@ a {
 }
 
 .statistics-defines dd {
+  margin: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -287,11 +348,39 @@ a {
 }
 
 /*Partners*/
+.partners {
+  margin-bottom: 80px;
+}
+
+.partners h2 {
+  display: none;
+}
+
 .partners-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /*Contacts*/
+.contacts {
+  background-image: url(/img/icons/map.png);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.contacts-wrapper {
+  background-color: var(--basic-white);
+  width: 319px;
+
+}
+
+.contacts h2 {
+  display: none;
+}
+
 .contacts h3 {
   font-size: 18px;
   font-weight: 700;
