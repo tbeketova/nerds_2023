@@ -13,19 +13,19 @@
 
 <body class="page-body">
   <header class="main-header">
-    <div class=" main-header-wrapper container">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/icons/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
-      </a>
-      <nav class="main-navigation">
+    <div class="main-header-bar"> <!-- контейнер, который сделает серую шапку -->
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/icons/nerds-logo.svg" width="159" height="65" alt="Логотип Нердс">
+        </a>
         <ul class="site-navigation">
-            <li><a href="blank.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a href="catalog.html">Магазин</a></li>
-            <li><a href="#">Контакты</a></li>
+          <li><a href="blank.html">Студия</a></li>
+          <li><a href="blank.html">Клиенты</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
         <div class="user-navigation">
-            <a class="basket" href="">Корзина</a>
+          <a class="basket" href="">Корзина</a>
         </div>
       </nav>
     </div>
@@ -108,9 +108,8 @@
 
         <section class="statistics">
           <h2>Статистика</h2>
-          <p>
-            <img src="img/icons/nerds-illustration-logo.jpg" alt="Иллюстрация логотипа" width="360" height="208">
-          </p>
+          <img src="img/icons/nerds-illustration-logo.jpg" alt="Иллюстрация логотипа" width="360" height="208">
+          
           <p class="statistics-title">с 2004 года Любим точность во всем:</p>
           <dl class="statistics-defines">
             <dt class="statistics-defines-percent defines-1">146<sup>%</sup></dt>
@@ -140,23 +139,24 @@
         </ul>
       </section>
     
-
-    <section class="contacts">
-      <h2>Контакты</h2>
-      <div class="contacts-wrapper">
-        <h3>NЁRDS DESIGN STUDIO</h3>
-        <p class="contacts-adress">наб. Реки Карповки, <br>
-          5 лит П, Санкт-Петербург</p>
-        <p>
-          <a class="contacts-phone" href="tel:+56565656565">+7 800 555-86-28</a>
-        </p>
-        <a class="button" href="">Напишите нам</a>
-      </div>    
-    </section>
+    <div class="contacts-wrapper ">
+      <section class="contacts container">
+        <h2>Контакты</h2>
+        <div class="contacts-box">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <p class="contacts-adress">наб. Реки Карповки, <br>
+            5 лит П, Санкт-Петербург</p>
+          <p>
+            <a class="contacts-phone" href="tel:+56565656565">+7 800 555-86-28</a>
+          </p>
+          <a class="button" href="">Напишите нам</a>
+        </div>    
+      </section>
+    </div>
     <!--Здесь будет карта. Пока не знаю, как поставить-->
   </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <section class="footer-social">
         <h2>Социальньe seti</h2>
         <ul class="social-list">
@@ -176,30 +176,37 @@
             </a>
           </li>
         </ul>
-        <p class="footer-slogan">Давайте дружить, это выгодно!</p>
-        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="footer-text">
+          <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+          <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </section>
     </footer>
   
 
   <!-- заготовкa для попапа с формой логина -->
-  <section class="submit">
-    <h2>Напишите нам</h2>
-    <form class="submit-form" action="" method="post">
-      <p class="submit-item">
-        <label for="submitform-name">Ваше имя:</label>
-        <input type="text" id="submitform-name" name="name" placeholder="Имя Фамилия">
-        <label for="submitform-email">Ваш email:</label>
-        <input type="email" id="submitform-email" name="email" placeholder="email@example.com ">
-      </p>
-      <p class="submit-item">
-        <label for="submitform-text">Текст письма:</label>
-      </p>
-      <p>
-        <textarea name="text" id="submitform-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="button" type="button">Отправить</button>
-    </form>
+  <section class="submit container">
+    <div class="submit-wrapper">
+      <h2>Напишите нам</h2>
+      <form class="submit-form" action="" method="post">
+        <p class="submit-item">
+          <label for="submitform-name">Ваше имя:</label>
+          <input type="text" id="submitform-name" name="name" placeholder="Имя Фамилия">
+          <label for="submitform-email">Ваш email:</label>
+          <input type="email" id="submitform-email" name="email" placeholder="email@example.com ">
+        </p>
+        <p class="submit-item">
+          <label for="submitform-text">Текст письма:</label>
+        </p>
+        <p>
+          <textarea name="text" id="submitform-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+          <button class="button" type="button">Отправить</button>
+        <p>
+          <a href="">Закрьiть</a>
+        </p>
+      </form>
+    </div>
   </section>
 </body>
 </html>

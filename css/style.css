@@ -45,7 +45,7 @@
 .page-body {
   margin: 0;
   padding: 0;
-  min-width: 960px;
+  min-width: 1170px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -72,10 +72,11 @@ a {
   width: 960px;
   margin: 0 auto;
   padding: 0 10px;
+  border: 2px solid green;
 }
 
 /*Main header*/
-.main-header {
+.main-header-bar {
   background-color: var(--basic-neutral);
 
 }
@@ -83,6 +84,7 @@ a {
 .main-header-wrapper {
   display: grid;
   grid-template-columns: 159px 1fr min-content;
+
   border: 1px solid red
 }
 
@@ -98,7 +100,8 @@ a {
   line-height: 30px;
   text-transform: uppercase;
   display: grid;
-  grid-template-columns: 1fr min-content;
+  grid-template-columns: 159px 1fr min-content;
+  gap: 20px;
   border: 2px solid green;
 
 }
@@ -286,6 +289,11 @@ a {
 }
 
 /*Statistics*/
+.statistics {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+}
+
 .statistics h2 {
   display: none;
 }
@@ -365,20 +373,27 @@ a {
 }
 
 /*Contacts*/
-.contacts {
+.contacts-wrapper {
   background-image: url(/img/icons/map.png);
-  background-repeat: no-repeat;
-  height: 100%;
+  height: 416px;
+  margin-bottom: 60px;
 }
 
-.contacts-wrapper {
+.contacts-box {
   background-color: var(--basic-white);
   width: 319px;
-
+  margin: 0;
+  padding: 0;
 }
 
 .contacts h2 {
   display: none;
+}
+
+.contacts-box p,
+.contacts-box h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .contacts h3 {
@@ -429,8 +444,32 @@ a {
 
 
 /*Main footer*/
+.main-footer {
+  margin-bottom: 50px;
+}
+
+.footer-social {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+.footer-social h2 {
+  display: none;
+}
+
+.footer-text p {
+  margin: 0;
+  padding: 0;
+}
+
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  margin-right: 139px;
 }
 
 .footer-slogan {
@@ -446,11 +485,24 @@ a {
 }
 
 /*Popup submit*/
-.submit h2 {
+.submit {
+  display: grid;
+  justify-content: center;
+}
+
+.submit-wrapper {
+  border: 2px solid grey;
+}
+
+.submit-wrapper h2 {
   font-size: 45px;
   font-weight: 700;
   line-height: normal;
+  margin: 0;
+  padding: 0;
 }
+
+
 
 .submit-item label {
   font-size: 16px;
