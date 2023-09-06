@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
 </head>
+
 <body class="page-body inner-page">
   <header class="main-header">
     <div class="main-header-bar"> <!-- контейнер, который сделает серую шапку -->
@@ -101,10 +102,9 @@
       </section>
 
       <section class="catalog">
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset>
-            <legend>Сoртировать:</legend>
-            <ul class="sorting-list">
+        <div class="sorting-wrapper">
+          <p>Сoртировать:</p>
+          <ul class="sorting-list">
               <li>
                 <a href="">По цене</a>
               </li>
@@ -120,20 +120,25 @@
               <li>
                 <a href="">Вверх</a>
               </li>
-            </ul>
-          </fieldset>
-        </form>
+          </ul>
+        </div> 
+
         <h2>Каталог шаблонов</h2>
         <ul class="catalog-list">
           <li>
-            <a href="#"><img src="img/img-sedona.png" width="359" height="578" alt="Шаблон Sedona"></a>
-            <a href="#">
-              <h3>Sedona</h3>
-            </a>
-            <p>Информационный сайт <br>
-              для туристов</p>
-            <a class="button" href="#">9 900 ₽</a>
+            <a><img src="img/img-sedona.png" width="359" height="578" alt="Шаблон Sedona"></a>
+            <div class="item-box">
+              <a href="#">
+                <h3>Sedona</h3>
+              </a>
+              <p>Информационный сайт <br>
+                для туристов</p>
+              <a class="button" href="#">9 900 ₽</a>
+            </div>
           </li>
+
+          
+
           <li>
             <a href="#"><img src="img/img-pink.jpg" width="359" height="578" alt="Шаблон Pink"></a>
             <a href="#">
@@ -212,50 +217,60 @@
       </section>
     </div>
 
-    <footer class="main-footer">
-      <section class="footer-social">
-        <h2>Социальньe seti</h2>
-        <ul class="social-list">
-          <li>
-            <a class="social-button" href="">
-              Youtube
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="">
-              Fb
-            </a>
-          </li>
-          <li>
-            <a class="social-button" href="">
-              Instagramm  
-            </a>
-          </li>
-        </ul>
-        <p class="footer-slogan">Давайте дружить, это выгодно!</p>
-        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
-      </section>
-    </footer>
   </main>
 
+  <footer class="main-footer container">
+    <section class="footer-social">
+      <h2>Социальньe seti</h2>
+      <ul class="social-list">
+        <li>
+          <a class="social-button" href="">
+            Youtube
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="">
+            Fb
+          </a>
+        </li>
+        <li>
+          <a class="social-button" href="">
+            Instagramm  
+          </a>
+        </li>
+      </ul>
+      <div class="footer-text">
+        <p class="footer-slogan">Давайте дружить, это выгодно!</p>
+        <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </section>
+  </footer>
+
+
   <!-- заготовкa для попапа с формой логина -->
-  <section class="submit">
-    <h2>Напишите нам</h2>
-    <form class="submit-form" action="" method="post">
-      <p class="submit-item">
-        <label for="submitform-name">Ваше имя:</label>
-        <input type="text" id="submitform-name" name="name" placeholder="Имя Фамилия">
-        <label for="submitform-email">Ваш email:</label>
-        <input type="email" id="submitform-email" name="email" placeholder="email@example.com ">
-      </p>
-      <p class="submit-item">
-        <label for="submitform-text">Текст письма:</label>
-      </p>
-      <p>
-        <textarea name="text" id="submitform-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </p>
-      <button class="button" type="button">Отправить</button>
-    </form>
+  <section class="submit container">
+    <div class="submit-wrapper">
+      <h2>Напишите нам</h2>
+      <form class="submit-form" action="" method="post">
+        <p class="submit-item">
+          <label for="submitform-name">Ваше имя:</label>
+          <input type="text" id="submitform-name" name="name" placeholder="Имя Фамилия">
+          <label for="submitform-email">Ваш email:</label>
+          <input type="email" id="submitform-email" name="email" placeholder="email@example.com ">
+        </p>
+        <p class="submit-item">
+          <label for="submitform-text">Текст письма:</label>
+        </p>
+        <p>
+          <textarea name="text" id="submitform-text" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </p>
+          <button class="button" type="button">Отправить</button>
+        <p>
+          <a href="">Закрьiть</a>
+        </p>
+      </form>
+    </div>
   </section>
+
 </body>
 </html>

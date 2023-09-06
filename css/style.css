@@ -415,7 +415,6 @@ a {
 }
 
 /*Inner page */
-.inner-page .main-header {}
 
 
 /*Page catalog*/
@@ -485,9 +484,16 @@ a {
   grid-column: 2 / 3;
 }
 
+.sorting-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /*Catalog*/
 .catalog {
   grid-column: 2 / 3;
+  margin-left: 141px;
 }
 
 .catalog h2 {
@@ -498,6 +504,12 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.item-box {
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-neutral);
 }
 
 /*Pagination*/
@@ -568,8 +580,6 @@ a {
   margin: 0;
   padding: 0;
 }
-
-
 
 .submit-item label {
   font-size: 16px;
