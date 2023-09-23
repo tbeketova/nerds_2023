@@ -74,6 +74,7 @@ a {
 .container {
   width: 1170px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 /*Main header*/
@@ -226,8 +227,8 @@ a {
 
 .contacts-button {
   width: 219px;
-  /*box-sizing: border-box;
-  display: inline-block;*/
+  box-sizing: border-box;
+  display: inline-block;
 }
 
 .filter-button {
@@ -447,16 +448,19 @@ a {
   background-image: url(/img/icons/map.png);
   height: 416px;
   margin-bottom: 60px;
+  display: flex;
+  align-items: center;
 }
 
 .contacts-box {
   background-color: var(--basic-white);
   width: 319px;
-  margin: 0;
-  padding: 0;
   padding: 49px 50px 47px 50px;
+  /*margin-top: 35px;*/
   display: flex;
   flex-direction: column;
+  padding-top: 54px;
+  box-sizing: border-box;
 }
 
 .contacts h2 {
@@ -465,7 +469,7 @@ a {
 
 .contacts-box p,
 .contacts-box h3 {
-  margin: 0;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -474,14 +478,25 @@ a {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 22px;
 }
 
 .contacts-adress,
-.contacts-phone {
+.contacts-phone a {
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
   color: var(--basic-light-dark);
+}
+
+.contacts-adress {
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+
+.contacts-phone {
+  margin-bottom: 37px;
 }
 
 /*Inner page */
@@ -516,22 +531,29 @@ a {
 }
 
 /*Filters*/
+.filter {
+  border: 2px solid red;
+}
+
 .filters h2,
 .sorting h2 {
   display: none;
 }
 
-.filters fieldset {
+.filter fieldset {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
-.filter legend {
+.filter legend,
+.catalog p {
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
 }
+
 
 .filter p {
   margin: 0;
@@ -549,15 +571,59 @@ a {
   opacity: 0.4;
 }
 
+.filter-price legend {
+  margin-bottom: 48px;
+}
+
+.filter .filter-price {
+  margin-bottom: 54px;
+}
+
+.filter .filter-layout {
+  margin-bottom: 47px;
+}
+
+.filter-layout legend,
+.filter-features legend {
+  margin-bottom: 13px;
+}
+
+.filter .filter-features {
+  margin-bottom: 48px;
+}
+
 /*Sorting*/
-.sorting {
+
+/*.sorting {
   grid-column: 2 / 3;
+}*/
+.sorting-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .sorting-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+
+}
+
+.sorting-list a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.sorting-list li {
+  margin-right: 25px;
+}
+
+.sorting-list li:last-child {
+  margin-right: 0;
 }
 
 /*Catalog*/
@@ -570,16 +636,66 @@ a {
   display: none;
 }
 
-.catalog-list {
-  list-style: none;
+.catalog p {
   margin: 0;
   padding: 0;
 }
 
-.item-box {
+.catalog-wrapper {}
+
+.catalog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.catalog-list li {
+  margin-bottom: 41px;
+  margin-right: 31px;
+}
+
+.catalog-list li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.item-wrapper {
   width: 360px;
   height: 231px;
   background-color: var(--basic-neutral);
+  text-align: center;
+}
+
+.item-box {
+  padding: 26px 0 44px 0;
+}
+
+.item-box .item-box-title {
+  color: var(--basic-black);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+
+.item-box p,
+.item-box h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.item-box h3 {
+  margin-bottom: 12px;
+}
+
+.item-box p {
+  text-transform: none;
+  margin-bottom: 32px;
+  color: var(--basic-light-dark);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 /*Pagination*/

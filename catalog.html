@@ -43,7 +43,7 @@
       <section class="filters">
         <h2>Фильтр шаблонов</h2>
         <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset>
+          <fieldset class="filter-price">
             <legend>Стоимость:</legend>
             <input type="range" id="prise-range" name="range" min="0" max="15000" step="1">
             <p>
@@ -54,7 +54,7 @@
             </p>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter-layout">
             <legend>Сетка:</legend>
             <ul>
               <li class="filter-option filter-radio">
@@ -72,7 +72,7 @@
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter-features">
             <legend>Особенности:</legend>
             <ul>
               <li class="filter-option filter-checkbox">
@@ -124,67 +124,70 @@
         </div> 
 
         <h2>Каталог шаблонов</h2>
-        <ul class="catalog-list">
-          <li>
-            <a><img src="img/img-sedona.png" width="359" height="578" alt="Шаблон Sedona"></a>
-            <div class="item-box">
-              <a href="#">
-                <h3>Sedona</h3>
+        <div class="catalog-wrapper">
+          <ul class="catalog-list">
+            <li>
+              <a>
+                <img src="img/img-sedona.png" width="359" height="578" alt="Шаблон Sedona">
               </a>
-              <p>Информационный сайт <br>
-                для туристов</p>
+              <div class="item-wrapper">
+                <div class="item-box">
+                  <a class="item-box-title" href="#">
+                    <h3>Sedona</h3>
+                  </a>
+                  <p>Информационный сайт <br>
+                    для туристов</p>
+                  <a class="button" href="#">9 900 ₽</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <a href="#"><img src="img/img-pink.jpg" width="359" height="578" alt="Шаблон Pink"></a>
+              <a href="#">
+                <h3>Pink App</h3>
+              </a>
+              <p>Продуктовый лендинг <br>
+                приложения для iOS и Android</p>
               <a class="button" href="#">9 900 ₽</a>
-            </div>
-          </li>
-
-          
-
-          <li>
-            <a href="#"><img src="img/img-pink.jpg" width="359" height="578" alt="Шаблон Pink"></a>
-            <a href="#">
-              <h3>Pink App</h3>
-            </a>
-            <p>Продуктовый лендинг <br>
-              приложения для iOS и Android</p>
-            <a class="button" href="#">9 900 ₽</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/img-barbershop.jpg" width="359" height="578" alt="Шаблон Barbershop"></a>
-            <a href="#">
-              <h3>Barbershop</h3>
-            </a>
-            <p>Сайт салона красоты. <br>
-              Для мужчин, да</p>
-            <a class="button" href="#">9 900 ₽</a>
-          </li>
-          <li>
-            <a href="#"><img src="img/img-mishka.jpg" width="359" height="578" alt="Шаблон Mishka"></a>
-            <a href="#">
-              <h3>Mishka</h3>
-            </a>
-            <p>Интернет-магазин <br>
-              вязаных игрушек</p>
-            <a class="button" href="#">9 900 ₽</a>
-          </li>
-          <li>
-            <a href=""><img src="img/img-aplus.png" width="359" height="578" alt="Шаблон Aplus"></a>
-            <a href="#">
-              <h3>Aplus</h3>
-            </a>
-            <p>Лендинг курсов повышения <br>
-              квалификации</p>
-            <a class="button" href="#">9 900 ₽</a>
-          </li>
-          <li>
-            <a href=""><img src="img/img-kvast.png" width="359" height="578" alt="Шаблон Kvast"></a>
-            <a href="#">
-              <h3>Кваст</h3>
-            </a>
-            <p>Промо-сайт производителя <br>
-              крафтового кваса</p>
-            <a class="button" href="#">9 900 ₽</a>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <a href="#"><img src="img/img-barbershop.jpg" width="359" height="578" alt="Шаблон Barbershop"></a>
+              <a href="#">
+                <h3>Barbershop</h3>
+              </a>
+              <p>Сайт салона красоты. <br>
+                Для мужчин, да</p>
+              <a class="button" href="#">9 900 ₽</a>
+            </li>
+            <li>
+              <a href="#"><img src="img/img-mishka.jpg" width="359" height="578" alt="Шаблон Mishka"></a>
+              <a href="#">
+                <h3>Mishka</h3>
+              </a>
+              <p>Интернет-магазин <br>
+                вязаных игрушек</p>
+              <a class="button" href="#">9 900 ₽</a>
+            </li>
+            <li>
+              <a href=""><img src="img/img-aplus.png" width="359" height="578" alt="Шаблон Aplus"></a>
+              <a href="#">
+                <h3>Aplus</h3>
+              </a>
+              <p>Лендинг курсов повышения <br>
+                квалификации</p>
+              <a class="button" href="#">9 900 ₽</a>
+            </li>
+            <li>
+              <a href=""><img src="img/img-kvast.png" width="359" height="578" alt="Шаблон Kvast"></a>
+              <a href="#">
+                <h3>Кваст</h3>
+              </a>
+              <p>Промо-сайт производителя <br>
+                крафтового кваса</p>
+              <a class="button" href="#">9 900 ₽</a>
+            </li>
+          </ul>
+        </div>  
         <ul class="pagination-list">
           <li class="pagination-item pagination-item-current">
             <a>1</a>
