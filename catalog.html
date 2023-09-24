@@ -42,16 +42,26 @@
     <div class="page-catalog-wrapper container">
       <section class="filters">
         <h2>Фильтр шаблонов</h2>
-        <form class="filter" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="filter-price">
-            <legend>Стоимость:</legend>
-            <input type="range" id="prise-range" name="range" min="0" max="15000" step="1">
-            <p>
-              <label for="range-min">от</label>
-              <input type="text" id="range-min" name="min" placeholder="0">
-              <label for="range-max">до</label>
-              <input type="text" id="range-max" name="max" placeholder="150000">
-            </p>
+        <form class="filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filter-item">
+            <legend>Стоимость</legend>
+            <div class="range-filter">
+              <div class="range-controls"> <!-- элемент с ползунками -->
+                <div class="scale"> <!-- прогресс-бар (шкала) активная часть диапазона -->
+                  <div class="bar" style="width: 30%; margin-left: 20%;"></div> <!-- указывает вьiбранную ширину прогресс-бара цветная -->
+                  <div class="toggle toggle-min" style="left: 20%;" tabindex="0"></div> <!-- ползунки -->
+                  <div class="toggle toggle-max" style="left: 50%;" tabindex="0"></div>
+                </div>
+              </div>
+              <div class="price-controls"> <!-- поля для ввода цены -->
+                <label class="min-price">от
+                  <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">до
+                  <input type="number" name="max-price" value="1500">
+                </label>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset class="filter-layout">
