@@ -262,13 +262,17 @@ a {
 
 .slider-button:hover,
 .services-button_site:hover,
-.slider-button:focus .services-button_site:focus {
+.contacts-button:hover,
+.slider-button:focus,
+.services-button_site:focus,
+.contacts-button:focus {
   background-color: #E74246;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .slider-button:active,
-.services-button_site:active {
+.services-button_site:active,
+.contacts-button:active {
   background-color: #D7373B;
   color: rgba(255, 255, 255, 0.2);
 }
@@ -971,13 +975,9 @@ a {
 }
 
 .footer-social {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  gap: 40px;
-}
+  display: flex;
+  align-items: center;
 
-.footer-social h2 {
-  display: none;
 }
 
 .footer-text p {
@@ -986,20 +986,48 @@ a {
 }
 
 .social-list {
+  width: 270px;
   margin: 0;
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  text-align: center;
+  justify-content: center;
+  gap: 9px;
   margin-right: 139px;
+  border: 2px solid red;
 }
 
-.footer-slogan {
+/*Social button*/
+.social-button {
+  width: 81px;
+  height: 81px;
+  background-color: #E1E1E1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #E74246;
+}
+
+.social-button:active {
+  background-color: #D7373B;
+}
+
+.social-button:active path {
+  fill: rgba(255, 255, 255, 0.2);
+}
+
+.footer-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-  border: 2px solid red;
+  /*margin-bottom: 10px;*/
+  border: 2px solid grey;
 }
 
 .footer-sale {
