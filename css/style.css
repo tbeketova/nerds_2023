@@ -888,9 +888,34 @@ a {
   margin-right: 25px;
 }
 
-.sorting-list li:last-child {
-  margin-right: 0;
+.sorting-item {
+  opacity: 0.2;
 }
+
+/*Sorting button*/
+.sorting-down path,
+.sorting-up path {
+  width: 11px;
+  height: 10px;
+  opacity: 0.2;
+}
+
+.sorting-item:hover,
+.sorting-down:hover path,
+.sorting-up:hover path,
+.sorting-item:focus,
+.sorting-down:focus path,
+.sorting-up:focus path {
+  opacity: 0.5;
+}
+
+.sorting-item:active,
+.sorting-down:active path,
+.sorting-up:active path {
+  opacity: 1.0;
+}
+
+
 
 /*Catalog*/
 .catalog {
