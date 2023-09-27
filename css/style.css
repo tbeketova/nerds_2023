@@ -263,16 +263,19 @@ a {
 .slider-button:hover,
 .services-button_site:hover,
 .contacts-button:hover,
+.submit-button:hover,
 .slider-button:focus,
 .services-button_site:focus,
-.contacts-button:focus {
+.contacts-button:focus,
+.submit-button:focus {
   background-color: #E74246;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .slider-button:active,
 .services-button_site:active,
-.contacts-button:active {
+.contacts-button:active,
+.submit-button:active {
   background-color: #D7373B;
   color: rgba(255, 255, 255, 0.2);
 }
@@ -980,11 +983,6 @@ a {
 
 }
 
-.footer-text p {
-  margin: 0;
-  padding: 0;
-}
-
 .social-list {
   width: 270px;
   margin: 0;
@@ -995,7 +993,6 @@ a {
   justify-content: center;
   gap: 9px;
   margin-right: 139px;
-  border: 2px solid red;
 }
 
 /*Social button*/
@@ -1022,12 +1019,19 @@ a {
   fill: rgba(255, 255, 255, 0.2);
 }
 
+.footer-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-text .footer-title {
+  margin-bottom: 10px;
+}
+
 .footer-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 36px;
-  /*margin-bottom: 10px;*/
-  border: 2px solid grey;
 }
 
 .footer-sale {
@@ -1038,12 +1042,16 @@ a {
 
 /*Popup submit*/
 .submit {
+  width: 960px;
   display: grid;
   justify-content: center;
+  box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.40);
 }
 
 .submit-wrapper {
-  border: 2px solid grey;
+  padding: 63px 100px 84px 100px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .submit-wrapper h2 {
@@ -1052,12 +1060,38 @@ a {
   line-height: normal;
   margin: 0;
   padding: 0;
+  margin-bottom: 64px;
+}
+
+.submit-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.submit-item {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+.submit-item input {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 16px;
 }
 
 .submit-item label {
   font-size: 16px;
   font-weight: 700;
   line-height: 18px;
+  margin-bottom: 9px;
+  display: block;
+}
+
+.submit-item:nth-child(3) textarea {
+  width: 760px;
+  margin-bottom: 47px;
+  padding: 16px;
 }
 
 .submit-item input,
@@ -1079,4 +1113,26 @@ a {
   border-radius: 3px;
   border: 2px solid #000;
   background-color: var(--basic-white);
+}
+
+.submit-button {
+  width: 259px;
+}
+
+.submit-close img {
+  width: 21px;
+  height: 21px;
+  opacity: 0.6;
+  position: absolute;
+  top: 68px;
+  right: 98px;
+}
+
+.submit-close:hover img,
+.submit-close:focus img {
+  opacity: 1.0;
+}
+
+.submit-close:active img {
+  opacity: 0.1;
 }
