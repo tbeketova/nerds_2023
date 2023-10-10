@@ -363,6 +363,7 @@ a {
 .services-item {
   display: grid;
   grid-template-rows: 146px auto auto auto;
+  margin-bottom: 20px;
 }
 
 .services-img {
