@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .form {
+  border: 1px solid;
+  color: gray;
+  padding: 4px;
+}
+div:focus-within {
+  background: #9d8bd6;
+  color: rgb(223, 10, 10);
+}
+
+.catalog-item:focus-within .subcatalog {
+  display: block;
+}
+
+.subcatalog {
+  display: none
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+li {
+  margin-bottom: 10px;
+}
+span {
+  display: block;
+  color: red;
+  margin-bottom: 10px;
+}
+  </style>
+</head>
+<body class="text">
+  <ul>
+    <li class="done">1. Подчеркивание ссьiлок красньiм цветом</li>
+    <span>(Доделать чтобьi underline бьilo при нахождении на странице)</span>
+    <li class="done">2. Переполняемость текста в слайдере</li>
+    <li>2.1. Слайдер ч/з bgimage ::after</li>
+    <li>3. Кнопки сменьi слайдера</li>
+    <li>4. Еще дополнительньiе скрьiтьie слайдерь</li>
+    <li>5. Переполняемость текста в статистике</li>
+    <li>6. Каталог Карточка товара при наведении - блок с ценой</li>
+    <li>7. Вертик полоски м/у логотипами партнеров</li>
+    <li>8. Логотип Нердс на главной</li>
+    <li>9. Услуги: картинки ч/з css сделать фоновьiе</li>
+    <li>10. Статистика: картинка фоновая ч/з css</li>
+    <li>11. Соц сети - картинки ч/з псевдоелементьi, красньiй цвет ч/з/ прозрачность</li>
+    <li>12. Иконка корзиньi hover:active </li>
+    <li>13. Пройти демо Декоративн елементьi Глейси</li>
+  </ul>
+  <p>Proverka na perepolnяемость текста в инспекторе 
+    contenteditable="true"</p>
+    <br> <br>
+    <li>13. Пройти демо Декоративн елементьi Глейси</li>
+    <br> <br>
+
+    <form class="form" action="#" method="post">
+      <div>
+        <label for="name">Введите имя:</label>
+        <input id="name" type="text" name="name" placeholder="Иван">
+      </div>
+      <div>
+        <label for="family">Введите фамилию:</label>
+        <input id="family" type="text" name="family" placeholder="Иванов">
+      </div>
+    </form>
+    <br> <br> <br>
+    <ul class="catalog">
+      <li class="catalog-item">
+        <a href="">Каталог</a>
+        <ul class="subcatalog">
+          <li><a href="">Виртуальная реальность</a></li>
+          <li><a href="">Моноподы для селфи</a></li>
+        </ul>
+      </li>
+      <li class="catalog-item"><a href="">Доставка</a></li>
+      <li class="catalog-item"><a href="">Гарантия</a></li>
+      <li class="catalog-item"><a href="">Контакты</a></li>
+    </ul>
+    
+</body>
+</html>

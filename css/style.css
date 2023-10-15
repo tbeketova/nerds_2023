@@ -153,6 +153,10 @@ a {
 .user-navigation a:hover,
 .user-navigation a:focus {
   color: var(--basic-focus);
+  text-decoration: underline;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
 }
 
 .site-navigation a:active,
@@ -192,7 +196,7 @@ a {
 
 .slider {
   display: grid;
-  grid-template-columns: 1fr 761px;
+  grid-template-columns: 1fr 739px;
   grid-template-rows: 1fr;
   margin-bottom: 80px;
 }
@@ -248,6 +252,8 @@ a {
 
 .slider-button {
   min-width: 240px;
+  max-width: 500px;
+  /*?не уверена*/
   /*для перезаполнения текста кнопки*/
   box-sizing: border-box;
   display: inline-block;
